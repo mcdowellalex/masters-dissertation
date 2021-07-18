@@ -1,0 +1,3 @@
+import Class
+
+Class.t()
