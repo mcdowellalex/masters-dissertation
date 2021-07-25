@@ -85,7 +85,7 @@ namespace dissertation_api.Controllers
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(
-                    @"SELECT * FROM dbo.Plant WHERE plantID= '" + id + "'", connection);
+                    @"SELECT * FROM dbo.Plant WHERE plantID= '" + id + "' ORDER BY datetimeRecorded ASC", connection);
                 command.CommandType = CommandType.Text;
 
                 connection.Open();
@@ -137,7 +137,7 @@ namespace dissertation_api.Controllers
             {
                 SqlCommand command = new SqlCommand(
                     @"SELECT * FROM dbo.Plant WHERE plantID= '" + id + 
-                    "' order by datetimeRecorded desc", connection);
+                    "' ORDER BY datetimeRecorded DESC", connection);
                 command.CommandType = CommandType.Text;
 
                 connection.Open();

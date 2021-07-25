@@ -1,12 +1,19 @@
 import * as React from "react"
 import {useState, useEffect} from 'react'
 import axios from 'axios'
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const UpTimePage = () => {
+
+
+//components
+import CustomTabs from '../components/customTabs';
+
+
+// ---------------- the actual page ---------------
+
+const PlantsPage = () => {
   const [plant1, setPlant1] = useState([]);
   const [plant2, setPlant2] = useState([]);
   const [plant3, setPlant3] = useState([]);
@@ -14,39 +21,41 @@ const UpTimePage = () => {
   const [plant5, setPlant5] = useState([]);
   const [plant6, setPlant6] = useState([]);
 
+
   //get all the plants time since last reading
   useEffect(()=> {
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/1')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/1')
       .then(response => {
         setPlant1(response.data)
+        console.log(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/2')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/2')
       .then(response => {
         setPlant2(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/3')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/3')
       .then(response => {
         setPlant3(response.data)
       }) 
       .catch(error => console.log(error))
     
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/4')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/4')
       .then(response => {
         setPlant4(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/5')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/5')
       .then(response => {
         setPlant5(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/mostRecent/6')
+    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/6')
       .then(response => {
         setPlant6(response.data)
       }) 
@@ -56,17 +65,20 @@ const UpTimePage = () => {
   }, [])
   return (
   <Layout>
-    <Seo title="Up Time" />
+    <Seo title="Plants" />
     
-    <h1>Time since last reading from plant:</h1>
-    <p>Plant 1: {Math.round(plant1)} min - {plant1>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 2: {Math.round(plant2)} min - {plant2>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 3: {Math.round(plant3)} min - {plant3>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 4: {Math.round(plant4)} min - {plant4>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 5: {Math.round(plant5)} min - {plant5>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 6: {Math.round(plant6)} min - {plant6>120 ? 'Down' : 'Up'}</p>
+
+
+    <CustomTabs 
+      plant1Data={plant1} 
+      plant2Data={plant2} 
+      plant3Data={plant3} 
+      plant4Data={plant4} 
+      plant5Data={plant5} 
+      plant6Data={plant6}
+    />
     
   </Layout>
 )}
 
-export default UpTimePage
+export default PlantsPage

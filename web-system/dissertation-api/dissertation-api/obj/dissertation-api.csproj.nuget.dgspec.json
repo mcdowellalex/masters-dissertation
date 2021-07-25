@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\dissertation-api.csproj": {}
+    "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\dissertation-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\dissertation-api.csproj": {
+    "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\dissertation-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
+        "projectUniqueName": "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
         "projectName": "dissertation-api",
-        "projectPath": "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
+        "projectPath": "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
         "packagesPath": "C:\\Users\\alex2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\obj\\",
+        "outputPath": "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alex2\\AppData\\Roaming\\NuGet\\NuGet.Config",

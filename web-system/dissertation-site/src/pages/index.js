@@ -17,21 +17,19 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Home" />
       
-      <p>
-        
-      </p> 
+      <h2>Analysis of human effects on individual plants</h2> 
+      <br />
 
+      <p>A quick look at the setup</p>
       <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
+        src="../images/setup.jpg"
+        width={800}
         quality={95}
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="A Gatsby astronaut"
         style={{ marginBottom: `1.45rem` }}
       />
-      <p>
-        <Link to="/upTimePage/">Go to page 2</Link> <br />
-      </p>
+      
     </Layout>
   )
 }

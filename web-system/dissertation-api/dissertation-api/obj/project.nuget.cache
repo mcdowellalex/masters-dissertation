@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oH7uvDh8AF7+h7/2An5Yf9eCltkCtvcdMUaJAsahiVmb7pUblj+/VOMgrDz7PNhTYqufEYt+mFOQkAdeDirjng==",
+  "dgSpecHash": "+pqukkghD3U8ZVgtvTJ9kQxAx8fL2xaF61r4z44J1RBiBuKMhenVWn/hykdC2IP9Q41unss6nZpXK6lp1BhAOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alex2\\development\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
+  "projectFilePath": "C:\\Users\\alex2\\development\\masters-dissertation\\web-system\\dissertation-api\\dissertation-api\\dissertation-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alex2\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\alex2\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
