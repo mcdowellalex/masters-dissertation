@@ -8,10 +8,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 
+
 const IndexPage = () => {
-  const [data, setData] = useState([]);
-  
-  
 
   return (
     <Layout>
@@ -26,9 +24,11 @@ const IndexPage = () => {
         width={800}
         quality={95}
         formats={["AUTO", "WEBP", "AVIF"]}
-        alt="A Gatsby astronaut"
+        alt="plants"
         style={{ marginBottom: `1.45rem` }}
       />
+
+      
       
     </Layout>
   )

@@ -24,38 +24,38 @@ const PlantsPage = () => {
 
   //get all the plants time since last reading
   useEffect(()=> {
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/1')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/1')
       .then(response => {
         setPlant1(response.data)
         console.log(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/2')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/2')
       .then(response => {
         setPlant2(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/3')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/3')
       .then(response => {
         setPlant3(response.data)
       }) 
       .catch(error => console.log(error))
     
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/4')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/4')
       .then(response => {
         setPlant4(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/5')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/5')
       .then(response => {
         setPlant5(response.data)
       }) 
       .catch(error => console.log(error))
 
-    axios.get('https://dissertation-api.azurewebsites.net/api/Plant/6')
+    axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/6')
       .then(response => {
         setPlant6(response.data)
       }) 
@@ -66,9 +66,7 @@ const PlantsPage = () => {
   return (
   <Layout>
     <Seo title="Plants" />
-    
-
-
+  
     <CustomTabs 
       plant1Data={plant1} 
       plant2Data={plant2} 
@@ -77,6 +75,9 @@ const PlantsPage = () => {
       plant5Data={plant5} 
       plant6Data={plant6}
     />
+
+    <br />
+
     
   </Layout>
 )}
