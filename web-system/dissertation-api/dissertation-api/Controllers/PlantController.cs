@@ -19,7 +19,7 @@ namespace dissertation_api.Controllers
     [EnableCors("AllowOrigin")]
     public class PlantController : ControllerBase
     {
-        private string connectionString = "Server=tcp:masters-dissertation.database.windows.net,1433;Initial Catalog=plants;Persist Security Info=False;User ID=am558;Password=Plants123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string connectionString = "Server=tcp:mcdowell-masters-dissertation.database.windows.net,1433;Initial Catalog=plants;Persist Security Info=False;User ID=am558;Password=Plants123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
         // GET: api/Plant

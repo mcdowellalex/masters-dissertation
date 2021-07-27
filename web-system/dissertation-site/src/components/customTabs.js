@@ -10,7 +10,9 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 //components
+import CustomAccordian from '../components/CustomAccordian'
 import CustomTable from '../components/customTable';
+import CustomCharts from '../components/customCharts'
 
 //local tab component
 function TabPanel(props) {
@@ -57,32 +59,32 @@ const CustomTabs = (props) => {
 
             <TabPanel value={value} index={0}>
               <h3>Plant One - Control Group</h3>
-              <CustomTable data={props.plant1Data} />
+              <CustomAccordian data={props.plant1Data} />
             </TabPanel>
 
             <TabPanel value={value} index={1}>
               <h3>Plant Two - Control Group</h3>
-              <CustomTable data={props.plant2Data} />
+              <CustomAccordian data={props.plant2Data} />
             </TabPanel>
 
             <TabPanel value={value} index={2}>
               <h3>Plant Three - Salt Group</h3>
-              <CustomTable data={props.plant3Data} />
+              <CustomAccordian data={props.plant3Data} />
             </TabPanel>
 
             <TabPanel value={value} index={3}>
               <h3>Plant Four - Salt Group</h3>
-              <CustomTable data={props.plant4Data} />
+              <CustomAccordian data={props.plant4Data} />
             </TabPanel>
 
             <TabPanel value={value} index={4}>
               <h3>Plant Five - Shaking/moving Group</h3>
-              <CustomTable data={props.plant5Data} />
+              <CustomAccordian data={props.plant5Data} />
             </TabPanel>
 
             <TabPanel value={value} index={5}>
               <h3>Plant Six - Shaking/moving Group</h3>
-              <CustomTable data={props.plant6Data} />
+              <CustomAccordian data={props.plant6Data} />
             </TabPanel>
         </div>
     )
