@@ -18,7 +18,7 @@ const CustomCharts = (props) => {
 
     return(
         <div style={{width:'100%'}}>
-            <div style={{fontSize:24, display:'flex', justifyContent:'center', marginBottom:20}}>Soil Moisture Vver Time</div>
+            <div style={{fontSize:24, display:'flex', justifyContent:'center', marginBottom:20}}>Soil Moisture Over Time</div>
             <LineChart width={800} height={400} data={data} margin={{ top: 5, right: 30, bottom: 5, left: 30}}>
                 <Line type="monotone" dataKey="soilMoisture" stroke="#8884d8" dot={false}/>
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" vertical={false}/>
