@@ -59,12 +59,12 @@ const UpTimePage = () => {
     <Seo title="Up Time" />
     
     <h1>Time since last reading from plant:</h1>
-    <p>Plant 1: {Math.round(plant1)} min - {plant1>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 2: {Math.round(plant2)} min - {plant2>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 3: {Math.round(plant3)} min - {plant3>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 4: {Math.round(plant4)} min - {plant4>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 5: {Math.round(plant5)} min - {plant5>120 ? 'Down' : 'Up'}</p>
-    <p>Plant 6: {Math.round(plant6)} min - {plant6>120 ? 'Down' : 'Up'}</p>
+    <p>Plant 1: {Math.round(plant1)} min - {plant1>30 ? 'Down' : 'Up'}</p>
+    <p>Plant 2: {Math.round(plant2)} min - {plant2>30 ? 'Down' : 'Up'}</p>
+    <p>Plant 3: {Math.round(plant3)} min - {plant3>30 ? 'Down' : 'Up'}</p>
+    <p>Plant 4: {Math.round(plant4)} min - {plant4>30 ? 'Down' : 'Up'}</p>
+    <p>Plant 5: {Math.round(plant5)} min - {plant5>30 ? 'Down' : 'Up'}</p>
+    <p>Plant 6: {Math.round(plant6)} min - {plant6>30 ? 'Down' : 'Up'}</p>
     
   </Layout>
 )}
