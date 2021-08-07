@@ -34,6 +34,7 @@ const Header = () => (
         <Link className={styles.link} to="/">Home</Link>
         <Link className={styles.link} to="/upTimePage/">Up Time</Link>
         <Link className={styles.link} to='/plants/'>Plants</Link>
+        <Link className={styles.link} to='/fun/'>Fun</Link>
       </div>
     </div>
     
