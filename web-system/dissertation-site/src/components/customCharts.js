@@ -48,7 +48,7 @@ const CustomCharts = (props) => {
                 <Line type="monotone" dataKey="tempDifference" stroke="#eb9234" dot={false}/>
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" vertical={false}/>
                 <XAxis dataKey='datetimeRecorded' hide={true} />
-                <YAxis label={{value:'Temp (degrees celsius)', angle:-90, position:'insideLeft'}} />
+                <YAxis label={{value:'Temp (degrees celsius)', angle:-90, position:'insideLeft'}} domain={[-6, 6]} /> 
                 <Tooltip />
             </LineChart>  
         </div>
