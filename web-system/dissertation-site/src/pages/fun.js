@@ -9,6 +9,7 @@ import Seo from "../components/seo"
 
 //components
 import CustomTabs from '../components/customTabs';
+import { array } from "prop-types"
 
 
 // ---------------- the actual page ---------------
@@ -21,12 +22,31 @@ const FunPage = () => {
   const [plant5, setPlant5] = useState([]);
   const [plant6, setPlant6] = useState([]);
 
+  function getDay(date){
+    const obj = new Date(date)
+    return obj.getDate()
+  }
+  
+  function organizeData(data){
+    var currentDay = -1;
+    var list=[]
+    for (let i = 0; i < data.length; i++) {
+      if (getDay(data[i].datetimeRecorded) == currentDay){
+        list.push(data[i])
+      }else{
+        list=[]
+        currentDay = getDay(data[i].datetimeRecorded)
+        list.push(data[i])
+      }
+    }
+  }
 
   //get all the plants time since last reading
   useEffect(()=> {
     axios.get('https://mcdowell-dissertation-api.azurewebsites.net/api/Plant/1')
       .then(response => {
-        setPlant1(response.data)
+
+        setPlant1(organizeData(response.data))
         console.log(response.data)
       }) 
       .catch(error => console.log(error))
@@ -75,18 +95,22 @@ const FunPage = () => {
       <br />
       <div style={{display:'flex', flexWrap:'wrap'}}>
 
-        {plant1.map((row) => (
-            <div>
-              <div 
-                  style={{width:'20px', height:'20px', marginLeft:'2px', marginBottom:'2px',
-                  background:`rgb(${row.redStrength},0${row.greenStrength},${row.blueStrength}`}}
-              />
-            </div> 
-        ))}
+        {plant1.map((row) => 
+            
+              {row.map((color) => (
+                <div>
+                  <div 
+                    style={{width:'20px', height:'20px', marginLeft:'2px', marginBottom:'2px',
+                    background:`rgb(${row.redStrength},0${row.greenStrength},${row.blueStrength}`}}
+                  />
+                </div> 
+              ))}
+              
+        )}
       </div>
 
 
-      <br />
+      {/* <br />
       <h2>Plant 2</h2>
       <br />
       <div style={{display:'flex', flexWrap:'wrap'}}>
@@ -168,7 +192,7 @@ const FunPage = () => {
         ))}
       </div>
 
-    <br />
+    <br /> */}
 
     
   </Layout>
