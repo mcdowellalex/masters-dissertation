@@ -1,7 +1,7 @@
 import requests
 
 
-url = 'https://dissertation-api.azurewebsites.net/api/Tests/'
+url = ''
 obj = {"id":8, "number":16}
 
 
