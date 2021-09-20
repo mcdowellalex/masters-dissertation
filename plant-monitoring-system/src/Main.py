@@ -47,7 +47,7 @@ while True:
         json.dump(data, f, ensure_ascii=False, indent=4, default=str)
     
     #send to web server
-    url = 'https://dissertation-api.azurewebsites.net/api/Plant/'
+    url = ''
 
     while True:
         try:
