@@ -1,4 +1,4 @@
-**please note that the Azure resources and therefore the website are no longer up**
+**please note that the Azure resources and therefore the website are no longer up
 
 ## Plant Monitoring System
 This folder contains all the test and source files for Pi system that is used to monitor the plants.
